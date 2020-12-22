@@ -1,0 +1,19 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.play_cell{
+    border: 3px solid black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}
+
+#play_board{
+    margin: auto;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin-bottom: 50px;
+}

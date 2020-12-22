@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="extraFrontEndProject_master.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="jquerySource/jquery_source.js"></script>
+        <title>EXTRA PROJECT: GUESSING GAME</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron justify-content-center">
+                <h1 style="text-align: center;">COLOR GUESSING GAME!</h1>
+                <p class="lead" style="text-align: center;">Personal Extra Project</p>
+                <hr class="my-4">
+                <p>This is an extra game I personally create. As its name, this is a gussing game where player will guess the location of a particular color.</p>
+                <p>There are 50 boxes. All of the box's color will be hidden. However, the color of the boxes will be the same except for 1 box.</p>
+                <p>Player's task is to find this 1 special box among other boxes.</p>
+                <p>To make it more interesting, player only has 10 attempt to give it a guess.</p>
+                <p>One last thing, the boxes will be shuffled on each round. Good Luck!</p>
+            </div>
+            <a>Attempt Available: </a><a id="player_attempt"></a><br>
+            <a>The boxes color will be: <div id="cell_boxColor"></div></a><br>
+            <a>The target box color will be: <div id="cell_targetBoxColor"></div></a>
+            <table id="play_board">
+                <tr class="table_row">
+                    <td> 
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="table_row">
+                    <td> 
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="table_row">
+                    <td> 
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="table_row">
+                    <td> 
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="table_row">
+                    <td> 
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-center">
+                            <button class="cell_box" type="button"></button>
+                            <div class="cell_content"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script src="extraFrontEndProject_script.js"></script>
+    <script src="bootstrap.js"></script>
+</html>
